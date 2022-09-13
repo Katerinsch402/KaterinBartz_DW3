@@ -16,7 +16,8 @@ class AlumnoController extends Controller
     {
        $alumnos = Alumno::paginate(4);
        return view('alumnos.index',compact(
-        'alumnos'));  
+        'alumnos')); 
+        /**kjj */ 
     
     }
 
