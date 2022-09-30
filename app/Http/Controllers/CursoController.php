@@ -14,7 +14,8 @@ class CursoController extends Controller
      */
     public function index()
     {
-        //
+        $cursos = Curso::all();
+         return view('cursos.index',compact('cursos'));
     }
 
     /**
@@ -37,6 +38,52 @@ class CursoController extends Controller
     {
         //
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\cr  $cr
+     * @return \Illuminate\Http\Response
+     */
+    public function show(cr $cr)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\cr  $cr
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(cr $cr)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\cr  $cr
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, cr $cr)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\cr  $cr
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(cr $cr)
+    {
+        //
+    }
+}
 
     /**
      * Display the specified resource.

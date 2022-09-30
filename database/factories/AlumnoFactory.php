@@ -15,7 +15,7 @@ protected $model = Alumno::class;
 
     public function definition()
     {
-        return [
+        /**return [
             'nombre' => $this->faker->sentence(),
             'apellido'  => $this->faker->sentence(),
             'edad' => $this->faker->randomDigit(),
@@ -27,10 +27,6 @@ protected $model = Alumno::class;
             'genero' => $this->faker->sentence(),
             'fechanac' => $this->faker->sentence(),
          
-
-
-
-
-        ];
+        ]; */
     }
 }
