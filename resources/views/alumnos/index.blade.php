@@ -1,7 +1,7 @@
 @include('app')
 @include('menu')
 <div class="container">
-	@include('flash::message')
+	
 	<h1>Lista de Alumnos</h1>
 	<a class="btn pull-righ" href="{{route('alumnos.create')}} "><button type="button" class="btn btn-primary">Nuevo</button></a>
 		<form class="form-inline my-2 my-lg-0 float-right">
