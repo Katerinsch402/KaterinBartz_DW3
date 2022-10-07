@@ -1,5 +1,18 @@
-<link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
+@include('app')
+@include('menu')
+	@if (count($errors)>0)
+<div class="alert alert-danger" role="aler">
+	<u>
+		@foreach ($errors->all() as $error)
+		<li>
+			{{$error}}
+		</li>
+		@endforeach
+	</u>
+@endif
+</div></div>
 <div class="container">
+
 	<div class="jumbotron">
    <div class="form-row align-items-center">
     <div class="form-group col-md-12">
@@ -31,7 +44,11 @@
 	</select>
 	<label for="fechanac">Fecha de nacimiento</label>
 	<input type="date" class="form-control" name="fechanac" id="fechanac">
-	<br>
+	<div class="form-group col-md-13">
+	 {!! Form::label('curso_id', 'Seleccionar curso:') !!}
+     {!! Form::select('curso_id', $cursos, null, ['class' => 'form-control custom-select','placeholder'=>'Seleccione']) !!}
+	</div>
+		<br>
     <input type="submit" class="btn btn-primary" value="Guardar">
     <a class="pull-right" href="{{route('alumnos.index')}} "><button type="button" class="btn btn-danger">Cancelar</button></a>
 		
