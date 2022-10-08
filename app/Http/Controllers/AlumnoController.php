@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Flash;
 use App\Models\Curso;
 class AlumnoController extends Controller
-//*jh
 {
     /**
      * Display a listing of the resource.
